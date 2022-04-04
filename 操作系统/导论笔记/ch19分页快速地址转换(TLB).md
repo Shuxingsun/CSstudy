@@ -116,7 +116,7 @@
 每次进程运行，当它访问数据和代码页时，都会触发 `TLB` 未命
  中。如果**操作系统频繁地切换进程，这种开销会很高**
 
-**避免开销：**些系统增加了硬件支持，实现跨上下文切换的 TLB 共享。比如
+**避免开销：**些系统增加了硬件支持，实现跨上下文切换的 `TLB` 共享。比如
  有的系统在 `TLB` 中添加了一个**地址空间标识符**（Address Space Identifier，`ASID`）。
 
 ![](https://picture-house.oss-cn-beijing.aliyuncs.com/notes/2022-04-03_15-54-03.png)
@@ -162,4 +162,11 @@
 - `TLBR`，用来将 `TLB`中的内容读取到指定寄存器中
 - `TLBWI`，用来替换指定的 `TLB` 项
 - `TLBWR`，用来随机替换一个 `TLB` 项
+
+
+
+## 英语名词
+
+- 快速地址转换（`TLB`）
+- **地址空间标识符**（Address Space Identifier，`ASID`）。
 
